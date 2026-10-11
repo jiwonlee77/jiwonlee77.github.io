@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jiwon Lee — M.S. student researching data mining, machine learning, recommender systems, and question answering.">
+  <title>Jiwon Lee | Research</title>
+  <style>
+    :root { color-scheme: light; --ink:#202b3b; --muted:#5b6878; --blue:#285f9e; --line:#e5eaf0; --paper:#fff; --wash:#f5f8fb; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.7 Georgia, "Times New Roman", serif; }
+    a { color:var(--blue); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .wrap { width:min(960px, calc(100% - 40px)); margin:0 auto; }
+    header { border-bottom:1px solid var(--line); background:rgba(255,255,255,.96); }
+    nav { min-height:62px; display:flex; align-items:center; justify-content:space-between; gap:20px; font:14px/1.4 Arial, sans-serif; }
+    .brand { color:var(--ink); font-weight:700; }
+    .navlinks { display:flex; flex-wrap:wrap; gap:20px; }
+    .navlinks a { color:var(--muted); }
+    main { padding:64px 0 80px; }
+    .intro { display:grid; grid-template-columns:150px 1fr; gap:34px; align-items:start; padding-bottom:42px; }
+    .monogram { width:140px; height:140px; border-radius:50%; display:grid; place-items:center; background:var(--wash); border:1px solid var(--line); color:var(--blue); font:700 42px Arial,sans-serif; }
+    .eyebrow { margin:0 0 6px; color:var(--muted); font:14px/1.5 Arial,sans-serif; }
+    h1 { margin:0; font-size:42px; line-height:1.2; letter-spacing:-.03em; }
+    .role { margin:8px 0 18px; color:var(--muted); font:17px/1.5 Arial,sans-serif; }
+    .bio { max-width:680px; margin:0 0 18px; font-size:18px; }
+    .interests { margin:0 0 20px; color:var(--muted); font:14px/1.7 Arial,sans-serif; }
+    .interests strong { color:var(--ink); }
+    .links { display:flex; flex-wrap:wrap; gap:9px 16px; font:14px/1.5 Arial,sans-serif; }
+    .links a { white-space:nowrap; }
+    section { border-top:1px solid var(--line); padding:28px 0 12px; }
+    h2 { margin:0 0 14px; font-size:24px; }
+    p { margin:0 0 12px; }
+    .note { color:var(--muted); }
+    .pub { padding:14px 0; border-top:1px solid var(--line); }
+    .pub:first-of-type { border-top:0; padding-top:0; }
+    .pub h3 { margin:0 0 5px; font-size:18px; font-weight:700; }
+    .pub p { margin:0; color:var(--muted); font:14px/1.6 Arial,sans-serif; }
+    footer { border-top:1px solid var(--line); color:var(--muted); padding:22px 0 36px; font:13px Arial,sans-serif; }
+    @media (max-width:650px) {
+      .wrap { width:min(100% - 30px, 960px); }
+      nav { align-items:flex-start; flex-direction:column; padding:15px 0; gap:10px; }
+      .navlinks { gap:12px 16px; }
+      main { padding-top:38px; }
+      .intro { grid-template-columns:1fr; gap:20px; }
+      .monogram { width:96px; height:96px; font-size:30px; }
+      h1 { font-size:36px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="Main navigation">
+      <a class="brand" href="#top">Jiwon Lee</a>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+      </div>
+    </nav>
+  </header>
+  <main class="wrap" id="top">
+    <div class="intro">
+      <div class="monogram" aria-label="Jiwon Lee initials">JL</div>
+      <div>
+        <p class="eyebrow">Data Mining Lab · Seoul National University</p>
+        <h1>Jiwon Lee</h1>
+        <p class="role">M.S. Student · Seoul, South Korea</p>
+        <p class="bio">I research data mining and machine learning, with a focus on recommender systems and question answering.</p>
+        <p class="interests"><strong>Research interests</strong> &nbsp; Recommender Systems · Question Answering · Data Mining · Machine Learning</p>
+        <div class="links" aria-label="Contact and profiles">
+          <a href="mailto:torijwl77@snu.ac.kr">Email</a>
+          <a href="https://scholar.google.com/citations?hl=ko&amp;user=TAaIQC0AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
+          <a href="https://www.linkedin.com/in/jiwon-lee-880160358/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://orcid.org/0009-0005-0643-3936" target="_blank" rel="noopener noreferrer">ORCID ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I am an M.S. student in the Data Mining Lab at Seoul National University in Seoul, South Korea. My research interests include data mining, machine learning, recommender systems, and question-answering systems.</p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <p>My work explores methods for building effective recommender models and question-answering systems.</p>
+      <p class="note">Add a few sentences about your current projects, methods, or research questions here.</p>
+    </section>
+
+    <section id="publications">
+      <h2>Selected Publications</h2>
+      <p class="note">Publication details can be added here. Link each title to the paper, preprint, or project page.</p>
+      <article class="pub">
+        <h3>Paper title</h3>
+        <p>Your Name, Coauthor Name · Venue, Year · <a href="#">Paper</a> · <a href="#">Code</a></p>
+      </article>
+    </section>
+  </main>
+  <footer><div class="wrap">Jiwon Lee · <a href="mailto:torijwl77@snu.ac.kr">torijwl77@snu.ac.kr</a></div></footer>
+</body>
+</html>
