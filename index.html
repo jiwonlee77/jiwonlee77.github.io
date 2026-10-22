@@ -3,101 +3,106 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Jiwon Lee — M.S. student researching data mining, machine learning, recommender systems, and question answering.">
+  <meta name="description" content="Jiwon Lee is an M.S. student in the Data Mining Lab at Seoul National University. Research interests include question answering, generative retrieval, and recommender systems.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jiwon Lee | Research">
+  <meta property="og:description" content="M.S. student at Seoul National University. Research interests: question answering, generative retrieval, and recommender systems.">
   <title>Jiwon Lee | Research</title>
   <style>
-    :root { color-scheme: light; --ink:#202b3b; --muted:#5b6878; --blue:#285f9e; --line:#e5eaf0; --paper:#fff; --wash:#f5f8fb; }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.7 Georgia, "Times New Roman", serif; }
-    a { color:var(--blue); text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    .wrap { width:min(960px, calc(100% - 40px)); margin:0 auto; }
-    header { border-bottom:1px solid var(--line); background:rgba(255,255,255,.96); }
-    nav { min-height:62px; display:flex; align-items:center; justify-content:space-between; gap:20px; font:14px/1.4 Arial, sans-serif; }
-    .brand { color:var(--ink); font-weight:700; }
-    .navlinks { display:flex; flex-wrap:wrap; gap:20px; }
-    .navlinks a { color:var(--muted); }
-    main { padding:64px 0 80px; }
-    .intro { display:grid; grid-template-columns:150px 1fr; gap:34px; align-items:start; padding-bottom:42px; }
-    .monogram { width:140px; height:140px; border-radius:50%; display:grid; place-items:center; background:var(--wash); border:1px solid var(--line); color:var(--blue); font:700 42px Arial,sans-serif; }
-    .eyebrow { margin:0 0 6px; color:var(--muted); font:14px/1.5 Arial,sans-serif; }
-    h1 { margin:0; font:700 42px/1.2 "Palatino Linotype", "Book Antiqua", Palatino, serif; letter-spacing:-.03em; }
-    .role { margin:8px 0 18px; color:var(--muted); font:700 17px/1.5 "Segoe UI", Tahoma, sans-serif; }
-    .bio { max-width:680px; margin:0 0 18px; font:400 18px/1.7 "Segoe UI", Tahoma, sans-serif; }
-    .interests { margin:0 0 20px; color:var(--muted); font:14px/1.7 Arial,sans-serif; }
-    .interests strong { color:var(--ink); }
-    .links { display:flex; flex-wrap:wrap; gap:9px 16px; font:700 14px/1.5 "Segoe UI", Tahoma, sans-serif; }
-    .links a { white-space:nowrap; }
-    section { border-top:1px solid var(--line); padding:28px 0 12px; }
-    h2 { margin:0 0 14px; font-size:24px; }
-    p { margin:0 0 12px; }
-    .note { color:var(--muted); }
-    .pub { padding:14px 0; border-top:1px solid var(--line); }
-    .pub:first-of-type { border-top:0; padding-top:0; }
-    .pub h3 { margin:0 0 5px; font-size:18px; font-weight:700; }
-    .pub p { margin:0; color:var(--muted); font:14px/1.6 Arial,sans-serif; }
-    footer { border-top:1px solid var(--line); color:var(--muted); padding:22px 0 36px; font:13px Arial,sans-serif; }
-    @media (max-width:650px) {
-      .wrap { width:min(100% - 30px, 960px); }
-      nav { align-items:flex-start; flex-direction:column; padding:15px 0; gap:10px; }
-      .navlinks { gap:12px 16px; }
-      main { padding-top:38px; }
-      .intro { grid-template-columns:1fr; gap:20px; }
-      .monogram { width:96px; height:96px; font-size:30px; }
-      h1 { font-size:36px; }
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #fff;
+      color: #222;
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    }
+    a { color: #245b87; text-decoration: none; text-underline-offset: 3px; }
+    a:hover { text-decoration: underline; }
+    a:focus-visible { outline: 2px solid #245b87; outline-offset: 4px; }
+    main { width: min(900px, calc(100% - 48px)); margin: 58px auto 64px; }
+    .skip-link { position: absolute; top: -80px; left: 16px; padding: 8px 12px; background: white; }
+    .skip-link:focus { top: 8px; }
+    .identity { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 10px 28px; }
+    h1 { margin: 0; font: 700 40px/1.2 Georgia, "Times New Roman", serif; }
+    .profile-links { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 14px; }
+    .bio { max-width: 810px; margin: 22px 0 0; }
+    .research-interests { margin: 14px 0 0; font-size: 15px; }
+    .research-interests strong { font-weight: 600; }
+    .intro { margin-bottom: 36px; }
+    h2 { margin: 0 0 24px; padding-bottom: 9px; border-bottom: 1px solid #ddd; font: 700 25px/1.35 Georgia, "Times New Roman", serif; }
+    .publication-year { margin: 0 0 14px; font-size: 18px; font-weight: 600; }
+    .publication-group + .publication-group { margin-top: 30px; }
+    .publication-title { margin: 0 0 6px; font-size: 17px; font-weight: 600; line-height: 1.5; }
+    .publication-authors { margin: 0 0 5px; color: #5b5b5b; font-size: 15px; }
+    .publication-authors strong { color: #222; font-weight: 700; }
+    .publication-venue { margin: 0; color: #555; font-size: 14px; }
+    .publication-summary { max-width: 810px; margin: 10px 0 0; color: #333; font-size: 15px; }
+    .publication-resources { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 7px; font-size: 14px; }
+    @media (max-width: 600px) {
+      main { width: calc(100% - 36px); margin-top: 30px; }
+      .identity { flex-direction: column; align-items: flex-start; gap: 12px; }
+      h1 { font-size: 34px; }
+      .profile-links { gap: 8px 16px; }
+      .bio { margin-top: 20px; }
+      .intro { margin-bottom: 30px; }
+    }
+    @media print {
+      main { width: 100%; margin: 0; }
+      .skip-link { display: none; }
+      article { break-inside: avoid; }
+      a { color: inherit; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <nav class="wrap" aria-label="Main navigation">
-      <a class="brand" href="#top">Jiwon Lee</a>
-      <div class="navlinks">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-      </div>
-    </nav>
-  </header>
-  <main class="wrap" id="top">
-    <div class="intro">
-      <div class="monogram" aria-label="Jiwon Lee initials">JL</div>
-      <div>
-        <p class="eyebrow">Data Mining Lab · Seoul National University</p>
-        <h1>Jiwon Lee</h1>
-        <p class="role">M.S. Student · Seoul, South Korea</p>
-        <p class="bio">I research data mining and machine learning, with a focus on recommender systems and question answering.</p>
-        <p class="interests"><strong>Research interests</strong> &nbsp; Recommender Systems · Question Answering · Data Mining · Machine Learning</p>
-        <div class="links" aria-label="Contact and profiles">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <main id="main">
+    <section class="intro" aria-labelledby="name">
+      <div class="identity">
+        <h1 id="name">Jiwon Lee</h1>
+        <div class="profile-links" aria-label="Contact and professional profiles">
           <a href="mailto:torijwl77@snu.ac.kr">Email</a>
-          <a href="https://scholar.google.com/citations?hl=ko&amp;user=TAaIQC0AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
-          <a href="https://www.linkedin.com/in/jiwon-lee-880160358/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-          <a href="https://orcid.org/0009-0005-0643-3936" target="_blank" rel="noopener noreferrer">ORCID ↗</a>
+          <a href="https://scholar.google.com/citations?hl=en&amp;user=TAaIQC0AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/jiwon-lee-880160358/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://orcid.org/0009-0005-0643-3936" target="_blank" rel="noopener noreferrer">ORCID</a>
         </div>
       </div>
-    </div>
-
-    <section id="about">
-      <h2>About</h2>
-      <p>I am an M.S. student in the Data Mining Lab at Seoul National University in Seoul, South Korea. My research interests include data mining, machine learning, recommender systems, and question-answering systems.</p>
+      <p class="bio">I am an M.S. student in the <a href="https://datalab.snu.ac.kr/" target="_blank" rel="noopener noreferrer">Data Mining Lab</a> at Seoul National University. My recent work focuses on detecting ambiguity in questions and retrieving information from personalized contexts.</p>
+      <p class="research-interests"><strong>Research interests:</strong> Question answering · Generative retrieval · Recommender systems</p>
     </section>
-
-    <section id="research">
-      <h2>Research</h2>
-      <p>My work explores methods for building effective recommender models and question-answering systems.</p>
-      <p class="note">Add a few sentences about your current projects, methods, or research questions here.</p>
-    </section>
-
-    <section id="publications">
-      <h2>Selected Publications</h2>
-      <p class="note">Publication details can be added here. Link each title to the paper, preprint, or project page.</p>
-      <article class="pub">
-        <h3>Paper title</h3>
-        <p>Your Name, Coauthor Name · Venue, Year · <a href="#">Paper</a> · <a href="#">Code</a></p>
-      </article>
+    <section class="section" id="publications" aria-labelledby="publications-title">
+      <h2 id="publications-title">Publications</h2>
+      <div>
+        <div class="publication-group">
+          <h3 class="publication-year">2026</h3>
+          <article aria-labelledby="archive-title">
+            <h4 class="publication-title" id="archive-title">Diversity is Not Ambiguity: Toward Accurate and Efficient Ambiguity Detection for Open-Domain QA</h4>
+            <p class="publication-authors"><strong>Jiwon Lee</strong>, Yong-chan Park, Jungin Hong, and U Kang</p>
+            <p class="publication-venue">Conference on Empirical Methods in Natural Language Processing (EMNLP), 2026<br>Budapest, Hungary</p>
+            <p class="publication-summary">ARCHIVE detects ambiguous questions by checking whether their valid answers imply conflicting interpretations, rather than treating answer diversity alone as ambiguity.</p>
+            <div class="publication-resources" aria-label="Resources for Diversity is Not Ambiguity">
+              <a href="https://datalab.snu.ac.kr/~admin/papers/2026ARCHIVE.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a href="https://github.com/snudatalab/ARCHIVE" target="_blank" rel="noopener noreferrer">Code</a>
+            </div>
+          </article>
+        </div>
+        <div class="publication-group">
+          <h3 class="publication-year">2025</h3>
+          <article aria-labelledby="pearl-title">
+            <h4 class="publication-title" id="pearl-title">Entity-Aware Generative Retrieval for Personalized Contexts</h4>
+            <p class="publication-authors">Jihyeong Jeon, <strong>Jiwon Lee</strong>, Cheol Ryu, and U Kang</p>
+            <p class="publication-venue">ACM International Conference on Information and Knowledge Management (CIKM), 2025<br>Seoul, Korea</p>
+            <p class="publication-summary">PEARL uses generative retrieval to find personal information from queries containing references such as nicknames, personal locations, and time expressions.</p>
+            <div class="publication-resources" aria-label="Resources for Entity-Aware Generative Retrieval for Personalized Contexts">
+              <a href="https://datalab.snu.ac.kr/~ukang/papers/2025CIKM-pearl.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a href="https://datalab.snu.ac.kr/~ukang/papers/2025CIKM-pearl.bib" target="_blank" rel="noopener noreferrer">BibTeX</a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
   </main>
-  <footer><div class="wrap">Jiwon Lee · <a href="mailto:torijwl77@snu.ac.kr">torijwl77@snu.ac.kr</a></div></footer>
 </body>
 </html>
